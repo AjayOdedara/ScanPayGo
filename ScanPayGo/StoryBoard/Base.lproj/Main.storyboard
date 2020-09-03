@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uRT-qf-gZt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart View Controller-->
+        <scene sceneID="XCK-5D-Uiz">
+            <objects>
+                <viewController id="lrp-5V-9hH" customClass="CartViewController" customModule="ScanPayGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2b-ez-gIV"/>
+                        <viewControllerLayoutGuide type="bottom" id="gRG-Wg-x4f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ee-pr-Koz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHE-Lw-eiQ">
+                                <rect key="frame" x="5" y="794.5" width="404" height="62.5"/>
+                                <color key="backgroundColor" red="0.4141374826" green="0.6106876135" blue="0.97110825779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Scan Product">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startScanBtnPressed" destination="lrp-5V-9hH" eventType="touchUpInside" id="zEH-gB-bJs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gRG-Wg-x4f" firstAttribute="top" secondItem="MHE-Lw-eiQ" secondAttribute="bottom" constant="5" id="Bun-67-yIB"/>
+                            <constraint firstAttribute="trailing" secondItem="MHE-Lw-eiQ" secondAttribute="trailing" constant="5" id="O1Q-55-OKS"/>
+                            <constraint firstItem="MHE-Lw-eiQ" firstAttribute="height" secondItem="4ee-pr-Koz" secondAttribute="height" multiplier="0.07" id="ujn-mg-A4c"/>
+                            <constraint firstItem="MHE-Lw-eiQ" firstAttribute="leading" secondItem="4ee-pr-Koz" secondAttribute="leading" constant="5" id="whm-1C-4Np"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qTa-fN-5Ak"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QAs-oi-haO">
+                        <barButtonItem key="rightBarButtonItem" id="c1j-33-xIW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="startScanBtn" destination="MHE-Lw-eiQ" id="Jp7-yf-6vq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfz-Mk-YkJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="Gvd-fs-HFc">
+            <objects>
+                <viewController storyboardIdentifier="ScannerViewController" id="411-BE-BYT" customClass="ScannerViewController" customModule="ScanPayGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5aQ-UD-gcF"/>
+                        <viewControllerLayoutGuide type="bottom" id="TDh-WJ-beg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdj-4I-uFJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="izP-yD-XcQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4p-24-fyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679.7101449275362" y="133.92857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ASc-iX-WTT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRT-qf-gZt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="WCi-SO-onJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lrp-5V-9hH" kind="relationship" relationship="rootViewController" id="h06-Sf-avJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TA6-dM-Hjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>

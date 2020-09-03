@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		9A68508C2501527700A852A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68508B2501527700A852A3 /* AppDelegate.swift */; };
 		9A68508E2501527700A852A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68508D2501527700A852A3 /* SceneDelegate.swift */; };
-		9A6850902501527700A852A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68508F2501527700A852A3 /* ViewController.swift */; };
+		9A6850902501527700A852A3 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68508F2501527700A852A3 /* CartViewController.swift */; };
 		9A6850932501527700A852A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850912501527700A852A3 /* Main.storyboard */; };
 		9A6850952501527D00A852A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850942501527D00A852A3 /* Assets.xcassets */; };
 		9A6850982501527D00A852A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850962501527D00A852A3 /* LaunchScreen.storyboard */; };
 		9A6850A32501527E00A852A3 /* ScanPayGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850A22501527E00A852A3 /* ScanPayGoTests.swift */; };
 		9A6850AE2501527E00A852A3 /* ScanPayGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850AD2501527E00A852A3 /* ScanPayGoUITests.swift */; };
+		9A6850BC2501548B00A852A3 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850BB2501548B00A852A3 /* ScannerViewController.swift */; };
+		9A6850BE250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850BD250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift */; };
+		9A6850C02501561D00A852A3 /* ScanError+Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850BF2501561D00A852A3 /* ScanError+Struct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		9A6850882501527700A852A3 /* ScanPayGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanPayGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A68508B2501527700A852A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A68508D2501527700A852A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A68508F2501527700A852A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A68508F2501527700A852A3 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		9A6850922501527700A852A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A6850942501527D00A852A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6850972501527D00A852A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		9A6850A92501527E00A852A3 /* ScanPayGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanPayGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850AD2501527E00A852A3 /* ScanPayGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPayGoUITests.swift; sourceTree = "<group>"; };
 		9A6850AF2501527E00A852A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A6850BB2501548B00A852A3 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		9A6850BD250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScannerViewController+AVCaptureDelegate.swift"; sourceTree = "<group>"; };
+		9A6850BF2501561D00A852A3 /* ScanError+Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanError+Struct.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,11 @@
 		9A68508A2501527700A852A3 /* ScanPayGo */ = {
 			isa = PBXGroup;
 			children = (
-				9A68508B2501527700A852A3 /* AppDelegate.swift */,
-				9A68508D2501527700A852A3 /* SceneDelegate.swift */,
-				9A68508F2501527700A852A3 /* ViewController.swift */,
-				9A6850912501527700A852A3 /* Main.storyboard */,
+				9A6850C32501565700A852A3 /* Main Delegate */,
+				9A6850C22501564700A852A3 /* Cart  */,
+				9A6850C12501563200A852A3 /* Scanner */,
+				9A6850C42501567400A852A3 /* StoryBoard */,
 				9A6850942501527D00A852A3 /* Assets.xcassets */,
-				9A6850962501527D00A852A3 /* LaunchScreen.storyboard */,
 				9A6850992501527D00A852A3 /* Info.plist */,
 			);
 			path = ScanPayGo;
@@ -126,6 +131,42 @@
 				9A6850AF2501527E00A852A3 /* Info.plist */,
 			);
 			path = ScanPayGoUITests;
+			sourceTree = "<group>";
+		};
+		9A6850C12501563200A852A3 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				9A6850BB2501548B00A852A3 /* ScannerViewController.swift */,
+				9A6850BD250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift */,
+				9A6850BF2501561D00A852A3 /* ScanError+Struct.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		9A6850C22501564700A852A3 /* Cart  */ = {
+			isa = PBXGroup;
+			children = (
+				9A68508F2501527700A852A3 /* CartViewController.swift */,
+			);
+			path = "Cart ";
+			sourceTree = "<group>";
+		};
+		9A6850C32501565700A852A3 /* Main Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9A68508B2501527700A852A3 /* AppDelegate.swift */,
+				9A68508D2501527700A852A3 /* SceneDelegate.swift */,
+			);
+			path = "Main Delegate";
+			sourceTree = "<group>";
+		};
+		9A6850C42501567400A852A3 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				9A6850912501527700A852A3 /* Main.storyboard */,
+				9A6850962501527D00A852A3 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6850902501527700A852A3 /* ViewController.swift in Sources */,
+				9A6850902501527700A852A3 /* CartViewController.swift in Sources */,
 				9A68508C2501527700A852A3 /* AppDelegate.swift in Sources */,
 				9A68508E2501527700A852A3 /* SceneDelegate.swift in Sources */,
+				9A6850BE250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift in Sources */,
+				9A6850C02501561D00A852A3 /* ScanError+Struct.swift in Sources */,
+				9A6850BC2501548B00A852A3 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
