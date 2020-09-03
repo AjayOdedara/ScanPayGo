@@ -18,6 +18,10 @@
 		9A6850BC2501548B00A852A3 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850BB2501548B00A852A3 /* ScannerViewController.swift */; };
 		9A6850BE250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850BD250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift */; };
 		9A6850C02501561D00A852A3 /* ScanError+Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850BF2501561D00A852A3 /* ScanError+Struct.swift */; };
+		9A6850C725015E9600A852A3 /* CartConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850C525015E9600A852A3 /* CartConstants.swift */; };
+		9A6850C825015E9600A852A3 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850C625015E9600A852A3 /* CartData.swift */; };
+		9A6850CB25015F3E00A852A3 /* TableViewCartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850C925015F3E00A852A3 /* TableViewCartItemCell.swift */; };
+		9A6850CC25015F3E00A852A3 /* TableViewCartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850CA25015F3E00A852A3 /* TableViewCartItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		9A6850BB2501548B00A852A3 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		9A6850BD250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScannerViewController+AVCaptureDelegate.swift"; sourceTree = "<group>"; };
 		9A6850BF2501561D00A852A3 /* ScanError+Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanError+Struct.swift"; sourceTree = "<group>"; };
+		9A6850C525015E9600A852A3 /* CartConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartConstants.swift; sourceTree = "<group>"; };
+		9A6850C625015E9600A852A3 /* CartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
+		9A6850C925015F3E00A852A3 /* TableViewCartItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCartItemCell.swift; sourceTree = "<group>"; };
+		9A6850CA25015F3E00A852A3 /* TableViewCartItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCartItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +154,11 @@
 		9A6850C22501564700A852A3 /* Cart  */ = {
 			isa = PBXGroup;
 			children = (
+				9A6850C525015E9600A852A3 /* CartConstants.swift */,
+				9A6850C625015E9600A852A3 /* CartData.swift */,
 				9A68508F2501527700A852A3 /* CartViewController.swift */,
+				9A6850C925015F3E00A852A3 /* TableViewCartItemCell.swift */,
+				9A6850CA25015F3E00A852A3 /* TableViewCartItemCell.xib */,
 			);
 			path = "Cart ";
 			sourceTree = "<group>";
@@ -275,6 +287,7 @@
 			files = (
 				9A6850982501527D00A852A3 /* LaunchScreen.storyboard in Resources */,
 				9A6850952501527D00A852A3 /* Assets.xcassets in Resources */,
+				9A6850CC25015F3E00A852A3 /* TableViewCartItemCell.xib in Resources */,
 				9A6850932501527700A852A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +317,10 @@
 				9A68508C2501527700A852A3 /* AppDelegate.swift in Sources */,
 				9A68508E2501527700A852A3 /* SceneDelegate.swift in Sources */,
 				9A6850BE250155B800A852A3 /* ScannerViewController+AVCaptureDelegate.swift in Sources */,
+				9A6850CB25015F3E00A852A3 /* TableViewCartItemCell.swift in Sources */,
 				9A6850C02501561D00A852A3 /* ScanError+Struct.swift in Sources */,
+				9A6850C825015E9600A852A3 /* CartData.swift in Sources */,
+				9A6850C725015E9600A852A3 /* CartConstants.swift in Sources */,
 				9A6850BC2501548B00A852A3 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
