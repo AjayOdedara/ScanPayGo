@@ -1,7 +1,7 @@
 {
 	"cartData": [
     {
-      "identity":"10930824",
+      "identity":"20930824",
       "title": "White T-Shirt",
       "price": 30.20,
       "imageName": "tshirt_2",
@@ -15,10 +15,10 @@
       "quantity": 1
     },
     {
-      "identity":"30930824",
-      "title": "Hand Bag",
+      "identity":"10930824",
+      "title": "Black T (Don't Be A)",
       "price": 100.00,
-      "imageName": "bag_1",
+      "imageName": "tshirt_1",
       "quantity": 1
     }
 	]
