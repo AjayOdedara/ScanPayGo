@@ -28,6 +28,7 @@
 		9A6850E3250162DE00A852A3 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850E2250162DE00A852A3 /* CartViewModel.swift */; };
 		9A6850E8250163E100A852A3 /* cartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850E7250163E100A852A3 /* cartData.json */; };
 		9A6850EA2501663300A852A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850E92501663300A852A3 /* Localizable.strings */; };
+		9A6850FB25016D4300A852A3 /* CartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850FA25016D4300A852A3 /* CartTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		9A6850E2250162DE00A852A3 /* CartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		9A6850E7250163E100A852A3 /* cartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cartData.json; sourceTree = "<group>"; };
 		9A6850E92501663300A852A3 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9A6850FA25016D4300A852A3 /* CartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6850A22501527E00A852A3 /* ScanPayGoTests.swift */,
+				9A6850FA25016D4300A852A3 /* CartTests.swift */,
 				9A6850A42501527E00A852A3 /* Info.plist */,
 			);
 			path = ScanPayGoTests;
@@ -426,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6850A32501527E00A852A3 /* ScanPayGoTests.swift in Sources */,
+				9A6850FB25016D4300A852A3 /* CartTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
