@@ -9,19 +9,25 @@
 import UIKit
 
 class CartViewController: UIViewController {
-
+  
   @IBOutlet weak var startScanBtn: UIButton!{
     didSet{
-      startScanBtn.layer.cornerRadius = 5
+      startScanBtn.layer.cornerRadius = 8
       startScanBtn.layer.borderWidth = 1
       startScanBtn.layer.borderColor = startScanBtn.titleColor(for: .normal)!.cgColor
     }
   }
   @IBOutlet weak var tableView: UITableView!
   
+  lazy var viewModel: CartViewModel = {
+    return CartViewModel()
+  }()
+  
+  // MARK: - View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     setUp()
+    bindViewModel()
   }
   // MARK: - View Setup
   private func setUp() {
@@ -36,12 +42,26 @@ class CartViewController: UIViewController {
                              bundle: nil),
                        forCellReuseIdentifier: CartConstants.Identifier.tableViewCellReuseIdentifier)
   }
-
+  // MARK: - Binding
+  private func bindViewModel() {
+    
+    viewModel.searchResultData.bindAndFire { [weak self] _ in
+      self?.tableView.reloadData()
+      self?.navigationItem.rightBarButtonItem?.title = self?.viewModel.checkOutTotal
+    }
+    viewModel.onShowError = { [weak self] alert in
+      DispatchQueue.main.async {
+        self?.presentSingleButtonDialog(alert: alert)
+      }
+    }
+  }
+  
+  
   // MARK: - Navigation Actions
   @IBAction func startScanBtnPressed() {
     guard let scannerView = ScannerViewController.viewControllerFrom(storyboard: "Main",
                                                                      withIdentifier: "ScannerViewController") else {
-      return
+                                                                      return
     }
     scannerView.delegate = self
     scannerView.closeBarButtonDirection = .right
@@ -56,7 +76,7 @@ class CartViewController: UIViewController {
   @objc func close() {
     self.dismiss(animated: true, completion: nil)
   }
-
+  
 }
 
 //MARK: - ScannerViewControllerDelegate
@@ -68,7 +88,7 @@ extension CartViewController: ScannerViewControllerDelegate {
     if error != nil {
       return
     }
-    print(text)
+    viewModel.getProduct(from: text)
   }
 }
 // MARK: - Alert
@@ -78,12 +98,13 @@ extension CartViewController: SingleButtonDialogPresenter { }
 // MARK: - TableView DataSource
 extension CartViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+    return viewModel.searchResultData.value.count
   }
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: CartConstants.Identifier.tableViewCellReuseIdentifier, for: indexPath) as? TableViewCartItemCell else {
       return UITableViewCell()
     }
+    cell.cart = viewModel.searchResultData.value[indexPath.row]
     return cell
   }
   func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -93,7 +114,7 @@ extension CartViewController: UITableViewDataSource {
                           commit editingStyle: UITableViewCell.EditingStyle,
                           forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
-      
+      viewModel.deleteCartItem(at: indexPath.row)
     }
   }
 }

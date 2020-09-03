@@ -1,0 +1,25 @@
+{
+	"cartData": [
+    {
+      "identity":"10930824",
+      "title": "White T-Shirt",
+      "price": 30.20,
+      "imageName": "tshirt_2",
+      "quantity": 1
+    },
+    {
+      "identity":"90930823",
+      "title": "Black T-Shirt",
+      "price": 75.87,
+      "imageName": "tshirt_3",
+      "quantity": 1
+    },
+    {
+      "identity":"30930824",
+      "title": "Hand Bag",
+      "price": 100.00,
+      "imageName": "bag_1",
+      "quantity": 1
+    }
+	]
+}

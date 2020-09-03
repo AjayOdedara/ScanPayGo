@@ -15,7 +15,7 @@ struct Cart: Codable {
   let cartData: [CartData]
 }
 
-// MARK: - CartDatum
+// MARK: - CartData
 struct CartData: Codable {
   let identity: String
   let title: String

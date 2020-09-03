@@ -30,11 +30,19 @@
                                     <action selector="startScanBtnPressed" destination="lrp-5V-9hH" eventType="touchUpInside" id="zEH-gB-bJs"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YU2-xt-jDn">
+                                <rect key="frame" x="0.0" y="140" width="414" height="654.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="YU2-xt-jDn" firstAttribute="leading" secondItem="qTa-fN-5Ak" secondAttribute="leading" id="3nR-yw-CTp"/>
                             <constraint firstItem="gRG-Wg-x4f" firstAttribute="top" secondItem="MHE-Lw-eiQ" secondAttribute="bottom" constant="5" id="Bun-67-yIB"/>
                             <constraint firstAttribute="trailing" secondItem="MHE-Lw-eiQ" secondAttribute="trailing" constant="5" id="O1Q-55-OKS"/>
+                            <constraint firstItem="qTa-fN-5Ak" firstAttribute="trailing" secondItem="YU2-xt-jDn" secondAttribute="trailing" id="Sv2-Bb-3ic"/>
+                            <constraint firstItem="YU2-xt-jDn" firstAttribute="top" secondItem="M2b-ez-gIV" secondAttribute="bottom" id="c2A-bT-njn"/>
+                            <constraint firstItem="MHE-Lw-eiQ" firstAttribute="top" secondItem="YU2-xt-jDn" secondAttribute="bottom" id="tCv-9X-fA4"/>
                             <constraint firstItem="MHE-Lw-eiQ" firstAttribute="height" secondItem="4ee-pr-Koz" secondAttribute="height" multiplier="0.07" id="ujn-mg-A4c"/>
                             <constraint firstItem="MHE-Lw-eiQ" firstAttribute="leading" secondItem="4ee-pr-Koz" secondAttribute="leading" constant="5" id="whm-1C-4Np"/>
                         </constraints>
@@ -45,6 +53,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="startScanBtn" destination="MHE-Lw-eiQ" id="Jp7-yf-6vq"/>
+                        <outlet property="tableView" destination="YU2-xt-jDn" id="o91-ka-nd8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfz-Mk-YkJ" sceneMemberID="firstResponder"/>

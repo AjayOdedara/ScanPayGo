@@ -1,0 +1,21 @@
+
+// Localizable.strings
+//  ScanPayGo
+//
+//  Created by Ajay Odedra on 03/09/20.
+//  Copyright © 2020 Ajay Odedra. All rights reserved.
+//
+
+// MARK: - Cart Constants
+
+// Alert Messages
+"cart_api_failure" = "Loading failed, check network connection";
+"cart_url_failure" = "Failed to load url for json file";
+
+//Alert Title
+"cart_alert_error_title" = "Error";
+"cart_alert_okay_title" = "Ok";
+
+// Cart Navigation title
+"cart_navigation_bar_title" = "Cart";
+"cart_navigation_bar_checkout_title" = " Check Out";
