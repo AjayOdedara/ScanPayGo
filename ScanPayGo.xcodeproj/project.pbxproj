@@ -29,6 +29,8 @@
 		9A6850E8250163E100A852A3 /* cartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850E7250163E100A852A3 /* cartData.json */; };
 		9A6850EA2501663300A852A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850E92501663300A852A3 /* Localizable.strings */; };
 		9A6850FB25016D4300A852A3 /* CartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850FA25016D4300A852A3 /* CartTests.swift */; };
+		9A9763F82501704C00222090 /* BindableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9763F62501704C00222090 /* BindableTests.swift */; };
+		9A9763F92501704C00222090 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9763F72501704C00222090 /* AlertTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		9A6850E7250163E100A852A3 /* cartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cartData.json; sourceTree = "<group>"; };
 		9A6850E92501663300A852A3 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9A6850FA25016D4300A852A3 /* CartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTests.swift; sourceTree = "<group>"; };
+		9A9763F62501704C00222090 /* BindableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableTests.swift; sourceTree = "<group>"; };
+		9A9763F72501704C00222090 /* AlertTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 		9A6850A12501527E00A852A3 /* ScanPayGoTests */ = {
 			isa = PBXGroup;
 			children = (
+				9A9763F52501704C00222090 /* UtilityTest */,
 				9A6850A22501527E00A852A3 /* ScanPayGoTests.swift */,
 				9A6850FA25016D4300A852A3 /* CartTests.swift */,
 				9A6850A42501527E00A852A3 /* Info.plist */,
@@ -272,6 +277,15 @@
 				9A6850D72501623700A852A3 /* AppServerClient.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9A9763F52501704C00222090 /* UtilityTest */ = {
+			isa = PBXGroup;
+			children = (
+				9A9763F62501704C00222090 /* BindableTests.swift */,
+				9A9763F72501704C00222090 /* AlertTests.swift */,
+			);
+			path = UtilityTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +444,8 @@
 			files = (
 				9A6850A32501527E00A852A3 /* ScanPayGoTests.swift in Sources */,
 				9A6850FB25016D4300A852A3 /* CartTests.swift in Sources */,
+				9A9763F92501704C00222090 /* AlertTests.swift in Sources */,
+				9A9763F82501704C00222090 /* BindableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
